@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breast Cancer Treatment Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  .container {
+    background-image: url("p.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px; /* Adjust width as needed */
+    margin: auto; /* Center the form */
+    margin-top: 50px; /* Adjust spacing from top */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  }
+  h2 {
+    color: #cc0066;
+    text-align: center;
+  }
+  label {
+    color: #0066cc;
+  }
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+  input[type="submit"] {
+    background-color: #cc0066;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Ensure button width matches form elements */
+  }
+  input[type="submit"]:hover {
+    background-color: #99004d;
+  }
+  .checkbox-label {
+    display: inline-block;
+    color: #0066cc;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Breast Cancer Treatment Form</h2>
+  <form action="/predict" method="post">
+<label for="radius_mean">Radius mean:</label>
+            <input type="text" name="radius_mean"><br>
+
+            <!-- Add more input fields for other features -->
+            <label for="texture_mean">Texture mean:</label>
+            <input type="text" name="texture_mean"><br>
+
+            <label for="perimeter_mean">Perimeter mean:</label>
+            <input type="text" name="perimeter_mean"><br>
+
+            <label for="area_mean">Area mean:</label>
+            <input type="text" name="area_mean"><br>
+
+            <label for="smoothness_mean">Smoothness mean:</label>
+            <input type="text" name="smoothness_mean"><br>
+
+            <label for="compactness_mean">Compactness mean:</label>
+            <input type="text" name="compactness_mean"><br>
+
+            <label for="concavity_mean">Concavity mean:</label>
+            <input type="text" name="concavity_mean"><br>
+
+            <label for="concave_points_mean">Concave points mean:</label>
+            <input type="text" name="concave_points_mean"><br>
+
+            <label for="symmetry_mean">Symmetry mean:</label>
+            <input type="text" name="symmetry_mean"><br>
+
+            <label for="fractal_dimension_mean">Fractal dimension mean:</label>
+            <input type="text" name="fractal_dimension_mean"><br>
+
+            <!-- Add more input fields for other features -->
+            <label for="radius_se">Radius SE:</label>
+            <input type="text" name="radius_se"><br>
+
+            <label for="texture_se">Texture se:</label>
+            <input type="text" name="texture_se"><br>
+
+            <label for="perimeter_se">Perimeter se:</label>
+            <input type="text" name="perimeter_se"><br>
+
+            <label for="area_se">Area SE:</label>
+            <input type="text" name="area_se"><br>
+
+            <label for="smoothness_se">Smoothness SE:</label>
+            <input type="text" name="smoothness_se"><br>
+
+            <label for="compactness_se">Compactness SE:</label>
+            <input type="text" name="compactness_se"><br>
+
+            <label for="concavity_se">Concavity SE:</label>
+            <input type="text" name="concavity_se"><br>
+
+            <label for="concave_points_se">Concave Points SE:</label>
+            <input type="text" name="concave_points_se"><br>
+
+            <label for="symmetry_se">Symmetry SE:</label>
+            <input type="text" name="symmetry_se"><br>
+
+            <label for="fractal_dimension_se">Fractal Dimension SE:</label>
+            <input type="text" name="fractal_dimension_se"><br>
+    <label for="radius_worst">Radius Worst:</label>
+            <input type="text" name="radius_worst"><br>
+
+            <label for="texture_worst">Texture Worst:</label>
+            <input type="text" name="texture_worst"><br>
+
+            <label for="perimeter_worst">Perimeter Worst:</label>
+            <input type="text" name="perimeter_worst"><br>
+
+            <label for="area_worst">Area Worst:</label>
+            <input type="text" name="area_worst"><br>
+
+            <label for="smoothness_worst">Smoothness Worst:</label>
+            <input type="text" name="smoothness_worst"><br>
+
+            <label for="compactness_worst">Compactness Worst:</label>
+            <input type="text" name="compactness_worst"><br>
+
+            <label for="concavity_worst">Concavity Worst:</label>
+            <input type="text" name="concavity_worst"><br>
+
+            <label for="concave_points_worst">Concave Points Worst:</label>
+            <input type="text" name="concave_points_worst"><br>
+
+            <label for="symmetry_worst">Symmetry Worst:</label>
+            <input type="text" name="symmetry_worst"><br>
+
+            <label for="fractal_dimension_worst">Fractal Dimension Worst:</label>
+            <input type="text" name="fractal_dimension_worst"><br>
+
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
